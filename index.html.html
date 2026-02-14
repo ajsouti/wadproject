@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محفظة شخصية</title>
+    <style>
+        
+        *{margin:0;padding:0;box-sizing:border-box;}
+
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height:1.6;
+            background:#081b29;
+            color:#ffffff;
+        }
+
+        
+        header{
+            background:#2a2b2b;
+            color:#fff;
+            padding:2rem 1rem;
+            text-align:center;
+        }
+        header h1{
+            font-size:2.5rem;
+            margin-bottom:0.5rem;
+        }
+        header p{
+            font-size:1.1rem;
+        }
+
+        
+        nav{
+            
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+        }
+        nav a{
+            display:block;
+            padding:1rem 1.5rem;
+            text-decoration:none;
+            color:#ffffff;
+            font-weight:600;
+        }
+        nav a:hover{
+            background:#5277b9;
+        }
+
+        section{
+            padding:3rem 1rem;
+            max-width:1100px;
+            margin:auto;
+        }
+        .section-title{
+            font-size:2rem;
+            margin-bottom:1.5rem;
+            text-align:center;
+            color:#1a73e8;
+        }
+
+        #about{
+            display:flex;
+            flex-wrap:wrap;
+            gap:2rem;
+            align-items:center;
+        }
+        #about img{
+            flex:1 1 250px;
+            max-width:250px;
+            border-radius:30%;
+            border:4px solid #69a6f5;
+        }
+        #about .content{
+            flex:2 1 300px;
+        }
+
+        #projects .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+            gap:1.5rem;
+        }
+        .project-card{
+            background:#fff;
+            border-radius:8px;
+            overflow:hidden;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+            transition:transform .3s;
+        }
+        .project-card:hover{
+            transform:translateY(-5px);
+        }
+        .project-card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+        .project-card .info{
+            padding:1rem;
+        }
+        .project-card h3{
+            margin-bottom:0.5rem;
+            color:#1a73e8;
+        }
+        .project-card a{
+            display:inline-block;
+            margin-top:0.5rem;
+            color:#1a73e8;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        #contact form{
+            max-width:600px;
+            margin:auto;
+            background:#fff;
+            padding:2rem;
+            border-radius:8px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+        #contact label{
+            display:block;
+            margin-bottom:0.5rem;
+            font-weight:600;
+        }
+        #contact input,
+        #contact textarea{
+            width:100%;
+            padding:0.8rem;
+            margin-bottom:1rem;
+            border:1px solid #ccc;
+            border-radius:4px;
+            font-family:inherit;
+        }
+        #contact button{
+            background:#1a73e8;
+            color:#fff;
+            border:none;
+            padding:0.8rem 1.5rem;
+            cursor:pointer;
+            font-size:1rem;
+            border-radius:4px;
+        }
+        #contact button:hover{
+            background:#1558b0;
+        }
+
+     
+
+
+       
+
+       
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>عبدالرحمن جمعه السوطي</h1>
+        <p>مهتم في نظم المعلومات وتطوير الويب</p>
+    </header>
+
+    <nav style="background-color:#1b5c8a;">
+        <ul>
+            <li><a href="#about">القائمة الرئيسية</a></li>
+            <li><a href="#aboutme">نبذة عني</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            
+            <li><a href="#contact">تواصل</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== قسم النبذة ===== -->
+    <section id="about">
+        <img src="WhatsAppImage.jpeg" alt="صورة شخصية">
+        <div class="content">
+            <h2 class="section-title">عبدالرحمن بن جمعه السوطي</h2>
+            <p style="text-align: center;">
+             طالب في كلية الإقتصاد والعلوم السياسية بجامعة السلطان قابوس، متخصص في نظم المعلومات ومهتم بالتقنية وبرمجة مواقع الويب وصناعة المحتوى، اتقن لغات عديدة منها Python, SQL, HTML, CSS.
+            </p>
+            <br>
+            <br>
+            <p style="text-align: center;">
+                أحب التعلم المستمر، والاطلاع على أحدث التقنيات،
+                والمساهمة في المشاريع المفتوحة المصدر.
+            </p>
+        </div>
+
+        
+    </section>
+    
+        <nav style="display: flex; justify-content: center; margin-top: 40px;">
+    <a href="#contact" style="
+        background-color: #0077b5;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: 0.3s;
+        margin-bottom: 200px;
+    ">
+        تواصل معي
+    </a>
+</nav>
+
+    
+    <section id="aboutme">
+        <div class="content">
+            <h4 class="section-title">نبذة عني </h4>
+            <p style="text-align: center;">بصفتي طالب في كلية الاقتصاد والعلوم السياسة، لقد درست  مواد الاقتصاد والتواصل التجاري والادارة،وقد تميزت في مواد المحاسبة والمالية وسلاسل التوريد. 
+
+            </p>
+            <br>
+            <br>
+
+            <p v>
+            اخترت هذا المجال لأنه يجمع بين الإبداع والتقنية في نفس الوقت؛ تقدر تحوّل فكرة بسيطة في بالك إلى موقع أو تطبيق يستخدمه الناس حول العالم. المجال هذا يخليك تتعلم مهارات مطلوبة بقوة في سوق العمل، ويعطيك حرية تشتغل من أي مكان تقريبًا. الأجمل إنك تشوف نتيجه شغلك مباشرة قدامك على المتصفح، سواء كنت تستخدم تقنيات مثل React لواجهة المستخدم أو JavaScript لإضافة التفاعل والحركة. كل مشروع جديد يعتبر تحدي ممتع يطور تفكيرك في حل المشكلات ويزيد خبرتك خطوة بخطوة، عشان كذا كثير ناس يشوفونه مجال ممتع ومليء بالفرص. 
+            </p>
+            <br>
+            <br>
+           <p style="text-align: center;">
+            اطمح ان اكون من المطورين المتميزين في العالم العربي وسابذل قصار جهدي لتحقيق المستحيل، بالارادةوالتخطيط لك شي ممكن.
+           </p>
+        </div>
+
+        
+    </section>
+    <section id="projects">
+        <h2 class="section-title" style="margin-top: 180px;">المشاريع</h2>
+        <div class="grid">
+            <div class="project-card">
+                <img src="https://th.bing.com/th/id/OIP.HSJ4R-P_hmzVV7ZGc0mBrgHaEK?w=306&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="مشروع 1">
+                <div class="info">
+                    <h3>موقع تعليمي</h3>
+                    <p style="color: #081b29;">منصة لتقديم دروس تفاعلية باستخدام HTML5 و CSS3.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://th.bing.com/th/id/OIP.Sj4N7fit9HEEES3Nibfo2wHaEc?w=298&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="مشروع 1">
+                <div class="info">
+                    <h3>لعبة الكلمات المبعثرة بلغة Python</h3>
+                    <p style="color: #081b29;">تم انشاء اللعبة وربطها بالذكاء الاصطناعي لاعطاء تميحات للمسخدم.</p>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="data:image/webp;base64,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" alt="مشروع 1">
+                <div class="info">
+                    <h3>بورتفوليو</h3>
+                    <p style="color: #081b29;">تم العمل على اعداد عدد من طلبات انشاء البورتفولو</p>
+                </div>
+            </div>
+        </div>    
+            
+    </section>
+
+
+    <section id="Skills"></section>
+
+    
+    <section id="contact">
+        
+        <div style="display:flex; 
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap:20px;">
+
+        <a href="https://wa.me/201234567890" target="_blank" title="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+             alt="WhatsApp" width="32" height="32">
+        </a>
+
+        <a href="https://www.linkedin.com/in/اسم-المستخدم" target="_blank" title="LinkedIn">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+             alt="LinkedIn" width="32" height="32">
+        </a>
+
+        <a href="https://www.instagram.com/اسم-المستخدم" target="_blank" title="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                 alt="Instagram" width="32" height="32">
+        </a>
+
+         <a href="https://github.com/اسم-المستخدم" target="_blank" title="GitHub">
+             <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
+         alt="GitHub" width="36" height="35" style="" >
+        </a>
+             <br>
+             <br>
+
+       
+        </div>
+
+    
+    <h2 class="section-title" style="color: #ffffff; "> تواصل معي عبر الايميل :</h2>
+        <div style="display:flex; gap:12px;">
+
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required placeholder="اسمك الثلاثي">
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="_replyto" required placeholder="ايميلك: example@mail.com">
+
+            <label for="message">رسالة</label>
+            <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+  
+
+ <footer style="text-align: center; padding: 10px; background-color: #243851;"> جميع الحقوق محفوظة 2026</footer>
+
+
+</body>
+</html>
